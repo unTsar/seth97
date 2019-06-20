@@ -1,0 +1,236 @@
+@font-face {
+  font-family: "RobotoRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoMedium";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoLight/RobotoLight.eot");
+  src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoLight/RobotoLight.woff") format("woff"), url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+}
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: #000;
+  color: #EE7C20;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+  font-size: 16px;
+  min-width: 320px;
+  max-width: 768px;
+  position: relative;
+  line-height: 1.65;
+  font-family: 'RobotoRegular';
+  overflow-x: hidden;
+  color: #fff;
+  background-color: white;
+}
+
+body input, body textarea {
+  border: #666 1px solid;
+  outline: none;
+}
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {
+  border-color: red;
+}
+
+body input:required:valid, body textarea:required:valid {
+  border-color: green;
+}
+
+body .header {
+  background-color: #000000;
+  width: 100%;
+  height: 65px;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+body .header .menu-button {
+  padding-left: 14px;
+  padding-right: 14px;
+  display: flex;
+  align-items: center;
+}
+
+body .header .menu-button .button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+body .header .menu-button .button .elem {
+  width: 24px;
+  height: 3px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  background-color: #D8D8D8;
+}
+
+body .header a.logo {
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+body .header a.logo img {
+  height: 100%;
+  width: auto;
+}
+
+body .header a.logo:active, body .header a.logo:link, body .header a.logo:visited, body .header a.logo:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+body .header .phone {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body .header .phone a.text {
+  margin-right: 5px;
+  font-family: 'RobotoLight';
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+body .header .phone a.text span.b {
+  font-family: 'RobotoBold';
+}
+
+body .header .phone img.phone-icon {
+  width: 20px;
+  height: auto;
+}
+
+body .main .item {
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #979797;
+}
+
+body .main .item .photos .main-photo img.photo {
+  width: 100%;
+  height: auto;
+}
+
+body .main .item .photos .others {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3px;
+}
+
+body .main .item .photos .others img.photo {
+  width: 100%;
+  height: auto;
+}
+
+body .main .item .text {
+  margin-top: 15px;
+  padding-left: 12.5px;
+}
+
+body .main .item .text span.price {
+  font-family: 'RobotoRegular';
+  font-size: 21px;
+  color: #323232;
+}
+
+body .main .item .text .params span.param1 {
+  font-family: 'RobotoMedium';
+  font-size: 13px;
+  color: #F07D00;
+}
+
+body .main .item .text .params span.param2, body .main .item .text .params span.param3 {
+  margin-left: 20px;
+  font-family: 'RobotoLight';
+  font-size: 13px;
+  color: #323232;
+}
+
+body .main .item .text span.adress {
+  font-family: 'RobotoBold';
+  font-size: 15px;
+  color: #323232;
+  text-transform: uppercase;
+}
+
+body .main .item .button {
+  margin-top: 15px;
+  background-color: #F07D00;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+body .main .item .button span {
+  color: #ffffff;
+  font-family: 'RobotoRegular';
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+body .main .item .line {
+  height: 1px;
+  width: 92.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px dashed #979797;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive.img-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+b, strong {
+  font-weight: bold;
+}
