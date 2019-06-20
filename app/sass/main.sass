@@ -1,0 +1,150 @@
+@import "fonts"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: #000
+	color: #EE7C20
+
+body
+	margin: auto
+	padding: 0
+	font-size: 16px
+	min-width: 320px
+	max-width: 768px
+	position: relative
+	line-height: 1.65
+	font-family: 'RobotoRegular'
+	overflow-x: hidden
+	color: #fff
+	background-color: white
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+	.header
+		background-color: #000000
+		width: 100%
+		height: 65px
+		margin-bottom: 40px
+		display: flex
+		.menu-button
+			padding-left: 14px
+			padding-right: 14px
+			display: flex
+			align-items: center
+			.button
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: center
+				cursor: pointer
+				.elem
+					width: 24px
+					height: 3px
+					margin-bottom: 2px
+					margin-top: 2px
+					background-color: #D8D8D8
+		a.logo
+			background-color: #ffffff
+			cursor: pointer
+			img
+				height: 100%
+				width: auto
+		a.logo:active, a.logo:link, a.logo:visited, a.logo:hover
+			background-color: #ffffff
+			color: #ffffff
+		.phone
+			width: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			a.text
+				margin-right: 5px	
+				font-family: 'RobotoLight'
+				font-size: 14px
+				color: #ffffff
+				text-decoration: none
+				span.b
+					font-family: 'RobotoBold'
+			img.phone-icon
+				width: 20px
+				height: auto
+	.main
+		.item
+			padding-left: 6px
+			padding-right: 6px
+			margin-bottom: 10px
+			border-bottom: 1px solid #979797
+			.photos
+				.main-photo
+					img.photo
+						width: 100%
+						height: auto
+				.others
+					display: grid
+					grid-template-columns: 1fr 1fr
+					grid-gap: 3px
+					img.photo
+						width: 100%
+						height: auto
+			.text
+				margin-top: 15px
+				padding-left: 12.5px
+				span.price
+					font-family: 'RobotoRegular'
+					font-size: 21px
+					color: #323232
+				.params
+					span.param1
+						font-family: 'RobotoMedium'
+						font-size: 13px
+						color: #F07D00
+					span.param2, span.param3
+						margin-left: 20px
+						font-family: 'RobotoLight'
+						font-size: 13px
+						color: #323232
+				span.adress
+					font-family: 'RobotoBold'
+					font-size: 15px
+					color: #323232
+					text-transform: uppercase
+			.button
+				margin-top: 15px
+				background-color: #F07D00
+				height: 34px
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				span
+					color: #ffffff
+					font-family: 'RobotoRegular'
+					font-size: 14px
+					text-transform: uppercase
+			.line
+				height: 1px
+				width: 92.5%
+				margin-left: auto
+				margin-right: auto
+				margin-top: 20px
+				margin-bottom: 20px
+				border-top: 1px dashed #979797
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
